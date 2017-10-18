@@ -1,0 +1,349 @@
+/*
+Timeline JS Custom Style Sheet
+Copyright Cognosante, LLC
+*/
+
+
+/**
+ * Global
+ * --------------------------------------------------
+ */
+
+body {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/**
+ * Timeline JS Overrides
+ * --------------------------------------------------
+ */
+
+/*
+ .storyjs-embed.full-embed,
+ .vco-storyjs,
+ .vco-timeline .vco-navigation .timenav-background .timenav-interval-background {
+ 	background-color: #f7f7f7;
+ }
+ */
+
+.vco-story,
+.vco-storyjs h1,
+.vco-storyjs h2,
+.vco-storyjs h3,
+.vco-storyjs h4,
+.vco-storyjs h5,
+.vco-storyjs h6,
+.vco-storyjs p,
+.vco-storyjs blockquote,
+.vco-storyjs pre,
+.vco-storyjs a,
+.vco-storyjs abbr,
+.vco-storyjs acronym,
+.vco-storyjs address,
+.vco-storyjs cite,
+.vco-storyjs code,
+.vco-storyjs del,
+.vco-storyjs dfn,
+.vco-storyjs em,
+.vco-storyjs img,
+.vco-storyjs q,
+.vco-storyjs s,
+.vco-storyjs samp,
+.vco-storyjs small,
+.vco-storyjs strike,
+.vco-storyjs strong,
+.vco-storyjs sub,
+.vco-storyjs sup,
+.vco-storyjs tt,
+.vco-storyjs var,
+.vco-storyjs dd,
+.vco-storyjs dl,
+.vco-storyjs dt,
+.vco-storyjs li,
+.vco-storyjs ol,
+.vco-storyjs ul,
+.vco-storyjs fieldset,
+.vco-storyjs form,
+.vco-storyjs label,
+.vco-storyjs legend,
+.vco-storyjs button,
+.vco-storyjs table,
+.vco-storyjs caption,
+.vco-storyjs tbody,
+.vco-storyjs tfoot,
+.vco-storyjs thead,
+.vco-storyjs tr,
+.vco-storyjs th,
+.vco-storyjs td,
+.vco-storyjs .vco-container,
+.vco-storyjs .content-container,
+.vco-storyjs .media,
+.vco-storyjs .text,
+.vco-storyjs .vco-slider,
+.vco-storyjs .slider,
+.vco-storyjs .date,
+.vco-storyjs .title,
+.vco-storyjs .messege,
+.vco-storyjs .map,
+.vco-storyjs .credit,
+.vco-storyjs .caption,
+.vco-storyjs .vco-feedback,
+.vco-storyjs .vco-feature,
+.vco-storyjs .toolbar,
+.vco-storyjs .marker,
+.vco-storyjs .dot,
+.vco-storyjs .line,
+.vco-storyjs .flag,
+.vco-storyjs .time,
+.vco-storyjs .era,
+.vco-storyjs .major,
+.vco-storyjs .minor,
+.vco-storyjs .vco-navigation,
+.vco-storyjs .start,
+.vco-storyjs .active,
+.vco-storyjs h1.date,
+.vco-storyjs h2.date,
+.vco-storyjs h3.date,
+.vco-storyjs h4.date,
+.vco-storyjs h5.date,
+.vco-storyjs h6.date,
+.vco-storyjs .timenav h1,
+.vco-storyjs .flag-content h1,
+.vco-storyjs .era h1,
+.vco-storyjs .timenav h2,
+.vco-storyjs .flag-content h2,
+.vco-storyjs .era h2,
+.vco-storyjs .timenav h3,
+.vco-storyjs .flag-content h3,
+.vco-storyjs .era h3,
+.vco-storyjs .timenav h4,
+.vco-storyjs .flag-content h4,
+.vco-storyjs .era h4,
+.vco-storyjs .timenav h5,
+.vco-storyjs .flag-content h5,
+.vco-storyjs .era h5,
+.vco-storyjs .timenav h6,
+.vco-storyjs .flag-content h6,
+.vco-storyjs .era h6 {
+	font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+}
+
+.vco-slider .nav-previous .icon,
+.vco-slider .nav-next .icon,
+.vco-timeline .vco-navigation .timenav .content .marker .flag,
+.vco-timeline .vco-navigation .timenav .content .marker.active .flag,
+.vco-timeline .vco-navigation .timenav .content .marker .flag:hover {
+	background-image: url(/WebResources/cog_/Images/timelineCognosante.png);
+}
+
+
+/* Timeline Nav */
+
+.vco-timeline .vco-navigation .timenav-background {
+	background: #f5f5f5;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f5f5f5 0%, #ffffff 50%, #f5f5f5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(50%,#ffffff), color-stop(100%,#f5f5f5));
+	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#ffffff 50%,#f5f5f5 100%);
+	background: -o-linear-gradient(top,  #f5f5f5 0%,#ffffff 50%,#f5f5f5 100%);
+	background: -ms-linear-gradient(top,  #f5f5f5 0%,#ffffff 50%,#f5f5f5 100%);
+	background: linear-gradient(to bottom,  #f5f5f5 0%,#ffffff 50%,#f5f5f5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 );
+}
+
+.vco-timeline .vco-navigation .timenav-background .timenav-line,
+.vco-timeline .vco-navigation .timenav .content .marker.active .line {
+	background-color: #f78f1e;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker .line {
+	background-color: #777;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.vco-timeline .vco-navigation .timenav-background .timenav-line {
+	-webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker .dot {
+	background: #777;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker.active .dot {
+	background: #f78f1e;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker .flag .flag-content h3,
+.vco-timeline .vco-navigation .timenav .content .marker .flag-small .flag-content {
+	color: #000;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker:hover .flag .flag-content h3,
+.vco-timeline .vco-navigation .timenav .content .marker:hover .flag-small .flag-content,
+.vco-timeline .vco-navigation .timenav .content .marker.active .flag .flag-content h3,
+.vco-timeline .vco-navigation .timenav .content .marker.active .flag-small .flag-content h3,
+.vco-timeline .vco-navigation .timenav .content .marker.active:hover .flag .flag-content h3,
+.vco-timeline .vco-navigation .timenav .content .marker.active:hover .flag-small .flag-content h3 {
+	color: #fff;
+}
+
+
+/* Timeline Slide */
+
+.vco-slider .nav-previous .nav-container,
+.vco-slider .nav-next .nav-container {
+	top: 15px !important;
+}
+
+.vco-slider .nav-previous .icon,
+.vco-slider .nav-next .icon {
+	width: 50px;
+	height: 50px;
+	margin: 5px 0 5px 0;
+}
+
+.vco-slider .nav-previous .icon {
+	margin-left: 7px;
+	background-position: 0 -170px;
+}
+
+.vco-notouch .vco-slider .nav-previous:hover .icon {
+	margin-left: 2px;
+}
+
+.vco-slider .nav-next .icon {
+	margin-left: 44px;
+	background-position: -70px -170px;
+}
+
+.vco-notouch .vco-slider .nav-next:hover .icon {
+	margin-left: 49px;
+}
+
+.vco-slider .slider-item .content .content-container .text .container h2.date {
+	margin-bottom: 5px;
+	color: #777;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.vco-storyjs h3 {
+	margin-bottom: 12px;
+	color: #f78f1e;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.vco-storyjs .vco-feature p {
+	color: #444;
+	font-size: 13px;
+}
+
+.vco-slider .nav-previous .date,
+.vco-slider .nav-next .date {
+	margin-bottom: 3px;
+	color: #777;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.vco-slider .nav-previous .title,
+.vco-slider .nav-next .title {
+	color: #116aba;
+	font-weight: 500;
+}
+
+
+/* Smaller screen widths */
+
+.vco-skinny.vco-notouch .vco-slider .nav-previous:hover,
+.vco-skinny.vco-notouch .vco-slider .nav-next:hover {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.vco-skinny.vco-notouch .vco-slider .nav-previous:hover .date,
+.vco-skinny.vco-notouch .vco-slider .nav-next:hover .date {
+	color: #aaa;
+}
+
+.vco-skinny.vco-notouch .vco-slider .nav-previous:hover .title,
+.vco-skinny.vco-notouch .vco-slider .nav-next:hover .title {
+	color: #fff;
+}
+
+.vco-notouch .vco-slider .nav-previous:hover .icon {
+    margin-left: 3px;
+}
+
+.vco-skinny.vco-notouch .vco-slider .nav-next:hover .icon {
+    margin-left: 73px;
+}
+
+
+/**
+ * Icons
+ * --------------------------------------------------
+ */
+
+span[class^="ico-timeline-"] {
+	float: left;
+	display: block;
+	height: 24px;
+	width: 24px;
+}
+
+.slider-item span[class^="ico-timeline-"] {
+	display: none;
+}
+
+.flag-content span[class^="ico-timeline-"] {
+	margin-top: 5px;
+}
+
+.ico-timeline-case-status-info {
+	background: transparent url(/WebResources/cog_/Images/icoTimelineCaseStatus.png) no-repeat top left;
+}
+
+.ico-timeline-created {
+	background: transparent url(/WebResources/cog_/Images/icoTimelineCreated.png) no-repeat top left;
+}
+
+.ico-timeline-email {
+	background: transparent url(/WebResources/cog_/Images/icoTimelineEmail.png) no-repeat top left;
+}
+
+.ico-timeline-call {
+	background: transparent url(/WebResources/cog_/Images/icoTimelineCall.png) no-repeat top left;
+}
+
+.ico-timeline-task {
+	background: transparent url(/WebResources/cog_/Images/icoTimelineTask.png) no-repeat top left;
+}
+
+.ico-timeline-task-alert {
+	background: transparent url(/WebResources/cog_/Images/icoTimelineTaskAlert.png) no-repeat top left;
+}
+
+
+/**
+ * Transitions and Animations
+ * --------------------------------------------------
+ */
+
+.vco-slider .nav-previous .icon,
+.vco-slider .nav-next .icon {
+	-webkit-transition: margin 0.3s ease;
+	-moz-transition: margin 0.3s ease;
+	-ms-transition: margin 0.3s ease;
+	-o-transition: margin 0.3s ease;
+	transition: margin 0.3s ease;
+}	

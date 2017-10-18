@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="../WebResources/cog_/Scripts/Common/XrmServiceToolkit.js"></script>
+    <script>
+        var Xrm = window.parent.Xrm;
+
+        $(function () {
+            $("#menu").menu({
+                select: function (event, ui) {
+                    Xrm.Page.data.entity.save("save");
+                    if (ui.item.attr("fetchable") === "true")
+                        RetrieveSelection(ui.item.text());
+                }
+            });
+        });
+
+        function RetrieveSelection( name ) {
+            var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>" +
+                "<entity name='cog_quickwrite'>" +
+                "<attribute name='cog_quickwriteid' />" +
+                "<attribute name='cog_text' />" +
+                "<filter type='and'>" +
+                "<condition attribute='cog_entityname' operator='eq' value='cog_note - outbound call' />" +
+                "<condition attribute='cog_name' operator='eq' value='" + name + "' />" +
+                "</filter>" +
+                "</entity>" +
+                "</fetch>";
+
+            var records = XrmServiceToolkit.Soap.Fetch( fetchXml );
+
+            if ( records.length < 1 ) {
+                alert( name + " does not exist in Quick Write records. Please contact Administrator" );
+                return;
+            }
+
+            var currentDescription = Xrm.Page.getAttribute( "cog_note" ).getValue( );
+
+            if ( currentDescription !== null )
+                Xrm.Page.getAttribute( "cog_note" ).setValue( currentDescription + "\r\n" + "\r\n" + records[ 0 ].attributes.cog_text.value );
+            else
+                Xrm.Page.getAttribute( "cog_note" ).setValue( records[ 0 ].attributes.cog_text.value );
+        }
+    </script>
+
+    <style>
+        .ui-menu {
+            font-size: 10px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li fetchable="false">
+            Deceased Provider Letter - Record Not Deactivated
+            <ul>
+                <li fetchable="true">Deceased Provider - 1st Contact</li>
+                <li fetchable="true">Deceased Provider - 2nd Contact</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Development Letter
+            <ul>
+                <li fetchable="true">Contact Successful</li>
+                <li fetchable="true">Contact Unsuccessful</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Foreign Provider
+            <ul>
+                <li fetchable="true">Deactivation application</li>
+                <li fetchable="true">Foreign Provider - 1st contact</li>
+                <li fetchable="true">Foreign Provider - 2nd contact</li>
+                <li fetchable="true">Change application</li>
+                <li fetchable="true">Deactivation - NO response to Letter</li>
+                <li fetchable="true">Deactivation - NPI not needed, deactivation application not received within 30 days.</li>
+                <li fetchable="true">Deactivation - Provider no longer with organization and all numbers lead back to organization.</li>
+                <li fetchable="true">Obtaining Information - NPI is Needed, does NOT have U.S. identification/SSN. Follow Up verification required.</li>
+                <li fetchable="true">Obtaining Information - NPI is Needed, has U.S. identification/SSN.</li>
+                <li fetchable="true">Obtaining Information - NPI is NOT needed</li>
+                <li fetchable="true">Re-verification Letter sent</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Individual LST - verified duplicate
+            <ul>
+                <li fetchable="true">Make outbound call to Provider with duplicate license</li>
+                <li fetchable="true">Make outbound call to Provider with duplicate license - Courtesy Call</li>
+            </ul>
+        </li>
+        <li fetchable="true">Keying Error</li>
+        <li fetchable="false">
+            Keylogger
+            <ul>
+                <li fetchable="true">CMS Approved Re-Imaging</li>
+                <li fetchable="true">Email Confirmation Received</li>
+                <li fetchable="true">Left Message</li>
+                <li fetchable="true">No Response</li>
+            </ul>
+        </li>
+        <li fetchable="true">Medicare ID - Type Unspecified</li>
+        <li fetchable="true">NPI Already Active - Changes Listed</li>
+        <li fetchable="false">
+            Outbound Call
+            <ul>
+                <li fetchable="true">Contact Successful -  Letter Destroyed & Email Resent</li>
+                <li fetchable="true">Contact Unsuccessful – Letter Destroyed</li>
+                <li fetchable="true">Letter Resent</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Outbound Call Made (include with outbound call note)
+            <ul>
+                <li fetchable="true">Sole Proprietor/Subpart/ Primary Taxonomy/Medicare-Type Unspecified is answered/mentioned by contact</li>
+            </ul>
+        </li>
+        <li fetchable="true">Phone call received verifying that the provider is deceased.</li>
+        <li fetchable="true">Primary Taxonomy</li>
+        <li fetchable="false">
+            Resent Notification
+            <ul>
+                <li fetchable="true">Non Authorized Contact - No Title</li>
+                <li fetchable="true">Non Authorized Contact - Title</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Sole Proprietor
+            <ul>
+                <li fetchable="true">Sole Proprietor - Advised</li>
+                <li fetchable="true">Sole Proprietor - Updated</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Subparting
+            <ul>
+                <li fetchable="true">Subparting - Advised</li>
+                <li fetchable="true">Subparting - Updated</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            The Deceased Provider letter has been returned as undeliverable
+            <ul>
+                <li fetchable="true">All phone numbers in the NPI record are disconnected.</li>
+                <li fetchable="true">The Provider no longer works there and no other phone numbers listed in record.</li>
+                <li fetchable="true">A contact was made and an office/contact person was reached and is able to provide documentation.</li>
+                <li fetchable="true">A contact was made and an office/contact person was reached and is not able to provide documentation.</li>
+                <li fetchable="true">A contact was made, and the NPI was deactivated due to 30 Day Deactivation update to the DMF File.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CRMSolutionManagerConfigFile FileVersion="1.0">
+  <Organizations>
+    <Organization>
+      <OrganizationPreferences type="OrganizationPreferences">
+        <BackupChartFiles>True</BackupChartFiles>
+        <BackupCSSFiles>True</BackupCSSFiles>
+        <BackupCustomAssemblyFiles>False</BackupCustomAssemblyFiles>
+        <BackupGIFFiles>False</BackupGIFFiles>
+        <BackupHTMLFiles>True</BackupHTMLFiles>
+        <BackupICOFiles>False</BackupICOFiles>
+        <BackupJavaScriptFiles>True</BackupJavaScriptFiles>
+        <BackupJPGFiles>False</BackupJPGFiles>
+        <BackupPNGFiles>False</BackupPNGFiles>
+        <BackupReportFiles>True</BackupReportFiles>
+        <BackupSilverlightFiles>False</BackupSilverlightFiles>
+        <BackupSitemapFiles>True</BackupSitemapFiles>
+        <BackupTypeScriptFiles>True</BackupTypeScriptFiles>
+        <BackupXMLFiles>True</BackupXMLFiles>
+        <BackupXSLFiles>True</BackupXSLFiles>
+        <ChartsPath>\Charts</ChartsPath>
+        <CSSPath>\Styles</CSSPath>
+        <ImagesPath>\Images</ImagesPath>
+        <JavaScriptIntellisenseSubDirectoryPath>\Intellisense Files</JavaScriptIntellisenseSubDirectoryPath>
+        <JavascriptPath>\Javascript</JavascriptPath>
+        <TypeScriptsPath>\TypeScript</TypeScriptsPath>
+        <MinifyCSS>1</MinifyCSS>
+        <MinifyJavascript>1</MinifyJavascript>
+        <SitemapPath>\Sitemap</SitemapPath>
+        <WebFilesPath>\Web Files</WebFilesPath>
+        <ProxyClassesPath>\Proxy Classes</ProxyClassesPath>
+        <BaseProxyClassRelativePath>\</BaseProxyClassRelativePath>
+        <AutoRefreshProxyClassesOnMetadataChanges>True</AutoRefreshProxyClassesOnMetadataChanges>
+        <ProxyClassNamingMethod>1</ProxyClassNamingMethod>
+        <ProxyClassNamingPattern>{0}</ProxyClassNamingPattern>
+      </OrganizationPreferences>
+      <Projects>
+        <Project type="Website">
+          <Files>
+            <File FileType="5">
+              <CRMId>b766ed01-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\icoTimelineCall.png</RelativeFilePath>
+            </File>
+            <File FileType="5">
+              <CRMId>af0fd725-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\icoTimelineCaseStatus.png</RelativeFilePath>
+            </File>
+            <File FileType="5">
+              <CRMId>a34e2c4f-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\icoTimelineCreated.png</RelativeFilePath>
+            </File>
+            <File FileType="5">
+              <CRMId>e7c2a780-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\icoTimelineEmail.png</RelativeFilePath>
+            </File>
+            <File FileType="5">
+              <CRMId>4b4bd8a2-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\icoTimelineTask.png</RelativeFilePath>
+            </File>
+            <File FileType="5">
+              <CRMId>1bdb48c0-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\icoTimelineTaskAlert.png</RelativeFilePath>
+            </File>
+            <File FileType="5">
+              <CRMId>07d78be0-7382-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <RelativeFilePath>Images\cog_\Images\timelineCognosante.png</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>ef2ff60c-7482-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\plugins.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>b7b41808-7582-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Timeline\jQuery.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>0b8cb433-7482-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Timeline\timelineCustom.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>1b13c6c8-394b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\ApplicationRequest\ApplicationRequestOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>84bbb990-8f4a-e511-80cc-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\ApplicationRequest\ApplicationRequstFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>fc2d24e5-bf5b-e511-80d4-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\ApplicationRibbons\ApplicationRibbonsScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>b3029f22-4e4b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\AssistancePilot\AssistancePilotFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>12aa3729-4e4b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\AssistancePilot\AssistancePilotOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>b90329b6-77c4-e511-8116-fc15b42886e8</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\CallAudit\CallAuditFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>0cb62ebd-77c4-e511-8116-fc15b42886e8</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\CallAudit\CallAuditOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>26007f95-d35b-e511-80d4-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Case\CaseFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>29007f95-d35b-e511-80d4-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Case\CaseOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>89fa4a94-c363-e511-8105-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Timeline\configDev.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>fd1c8ead-3c8a-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\js\storyjs_embed.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>69163f08-3b8a-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\js\timeline.min.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>3ae53a16-b846-e511-80e3-c4346bac0260</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\require.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>65d63fee-385e-e511-80e3-c4346bac4b64</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Timeline\config.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>bba9da88-c045-e511-80c5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\CrmUser.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>6d64e375-9ac6-e511-810f-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\DataEntryAudit\DataEntryAuditFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>83d4e27b-9ac6-e511-810f-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\DataEntryAudit\DataEntryAuditOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>e8455a03-574b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\EFI\EFIFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>eb455a03-574b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\EFI\EFIOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>7b401ff5-664b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Email\EmailFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>7e401ff5-664b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Email\EmailOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>b0db2a6f-4647-e511-80e3-c4346bac0260</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\FormConstants.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>e5c6398f-c045-e511-80c5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\FormMainScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>e8c6398f-c045-e511-80c5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\FormUtilities.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>ebc6398f-c045-e511-80c5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\jquery.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>9faba097-c045-e511-80c5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\json2.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>4d150492-3178-e511-80dc-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Letter\LetterFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>50150492-3178-e511-80dc-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Letter\LetterOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>4c3e9815-bc62-e511-80d6-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Note\NoteFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>4f3e9815-bc62-e511-80d6-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Note\NoteOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>3e271c38-40ae-e411-80ec-c4346bad67c0</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_phoneCallJavaScript.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>276d080c-684b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\PhoneCall\PhoneCallFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>246d080c-684b-e511-80ce-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\PhoneCall\PhoneCallOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>ef8629d2-14c5-e511-810f-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\ProcessMonitoringAudit\ProcessMonitoringAuditFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>5c8c4ede-14c5-e511-810f-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\ProcessMonitoringAudit\ProcessMonitoringAuditOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>3bfeffb2-1566-e511-80d7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\SolicitedCorrespondence\SolicitedCorrespondenceFormScripts.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>3efeffb2-1566-e511-80d7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\SolicitedCorrespondence\SolicitedCorrespondenceOnChangeEvents.js</RelativeFilePath>
+            </File>
+            <File FileType="3">
+              <CRMId>a2aba097-c045-e511-80c5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Javascript\cog_\Scripts\Common\XrmServiceToolkit.js</RelativeFilePath>
+            </File>
+            <File FileType="11">
+              <CRMId>b1d8644d-5a7c-e511-8109-c4346bad2660</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Sitemap\Sitemap.crmsitemap</RelativeFilePath>
+            </File>
+            <File FileType="2">
+              <CRMId>1c6c4435-3b8a-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Styles\cog_\css\timeline.css</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>77146cb9-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_AssistancePilotNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>7a146cb9-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_CorrespondenceNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>e76d9ac1-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_EmailNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>ea6d9ac1-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_EREFINotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>71b4eac8-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_ERPaperNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>74b4eac8-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_ERWebNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>febb34cf-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_FraudNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>01bc34cf-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_InboundCallNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>43fa68bd-6177-e511-80dc-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_LetterResponses.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>fb5204db-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_OutboundCallNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>fe5204db-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_PaperApplicationNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>8bd088e1-0b7c-e511-80de-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_SolicitedCorrNotes.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>66daf6f8-625d-e511-80ec-c4346bac0260</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_Timeline.html</RelativeFilePath>
+            </File>
+            <File FileType="1">
+              <CRMId>bd59cd27-2f57-e511-80d1-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Web Files\cog_NPIDirections.html</RelativeFilePath>
+            </File>
+            <File FileType="2">
+              <CRMId>fb7700fa-7582-e511-8106-0e1b14fb3533</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <MinifyMode>1</MinifyMode>
+              <RelativeFilePath>Styles\cog_timelineCustom.css</RelativeFilePath>
+            </File>
+          </Files>
+          <Name>NPI Solution Resources</Name>
+        </Project>
+        <Project type="Report">
+          <Files>
+            <File FileType="12">
+              <CRMId>1332f20a-8489-e511-80e8-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Application Processor Inventory Report.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>2fe9e5ff-f683-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Application Requests.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>6a68e4aa-a788-e511-80e8-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Call Backs.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>6b1e66ee-5acf-e511-811b-c4346bad461c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Call Monitoring Report.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>93bacbe7-5acf-e511-811b-c4346bad461c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Call Monitoring Sub Report.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>92b68b17-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Complaint Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>7100ba29-d871-e511-80e0-3863bb3c0130</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Daily Faxes Received Stats.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>718e4922-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Deceased Provider Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>902deb29-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Development Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>4ceffd40-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>EFI Return Certification Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>f9d02d6b-687b-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>EFIO Welcome Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>2a913540-e570-e511-80df-3863bb35cf60</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Email Cases - Stat Details.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>73f36ce2-089d-e511-810a-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Email Cases - Stats.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>f058b6a5-0087-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER EFI Cases Closed Call Required.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>876587f5-f386-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER EFI Cases Closed No Call.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>79081e07-0587-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER EFI Tickets Closed Developed.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>818a1114-2d87-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER Paper Cases Closed Call Required.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>3e13ba1b-2d87-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER Paper Cases Closed Developed.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>f3ce0123-2d87-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER Paper Cases Closed No Call.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>089f731f-1687-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER Web Cases Closed Call Required.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>1eda434a-1687-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER Web Cases Closed Developed.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>06839b34-1687-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>ER Web Cases Closed No Call.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>ba82697b-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Fraud Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>63ec4e6c-4283-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Inbound Call Case Reason Stats.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>0d3b7885-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Misc Corr Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>eb48578d-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Misc Reject Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>24c0b094-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Non SSN Disallowance Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>063f93c5-1783-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>NPI Call Center Activity.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>3110e05e-6882-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Number Of Complaints.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>54b925d8-fbd0-e511-810f-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Quality Requirement and Summary.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>ede623d2-fbd0-e511-810f-c4346bace18c</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Quality Requirement and Summary Sub Report.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>6459649d-c179-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Return Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>b83fa7f0-f378-e511-80dd-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>SSN Disallowance Letters.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>efa3682d-4482-e511-80e6-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Timeframes.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <CRMId>156f7a14-d883-e511-80e7-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <RelativeFilePath>Top 10 Call Reasons.rdl</RelativeFilePath>
+            </File>
+            <File FileType="12">
+              <RelativeFilePath>Monthly Quality Report.rdl</RelativeFilePath>
+              <AutoBackupFileOnPublish>True</AutoBackupFileOnPublish>
+              <CRMId>06fce748-45f7-e511-8117-c4346bace18c</CRMId>
+            </File>
+          </Files>
+          <Name>NPI Solution Reports</Name>
+        </Project>
+        <Project type="Assembly">
+          <AssemblyReferences>
+            <AssemblyReference>
+              <Name>microsoft.crm.sdk.proxy</Name>
+            </AssemblyReference>
+            <AssemblyReference>
+              <Name>microsoft.xrm.sdk</Name>
+            </AssemblyReference>
+            <AssemblyReference>
+              <Name>microsoft.xrm.sdk.workflow</Name>
+            </AssemblyReference>
+          </AssemblyReferences>
+          <DuplicateTypes />
+          <ReferenceDirectories />
+          <Files>
+            <File FileType="13">
+              <CRMId>5130869f-9c7d-e511-80e5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+            </File>
+          </Files>
+          <Name>Case -  Auto Number Plugin</Name>
+          <UseILMerge>False</UseILMerge>
+          <CopyAttributes>True</CopyAttributes>
+          <Closed>True</Closed>
+          <Log>False</Log>
+          <OverrideCRMReferenceDirectory>False</OverrideCRMReferenceDirectory>
+          <OverrideTargetFrameworkLocation>False</OverrideTargetFrameworkLocation>
+          <TargetFrameworkLocation>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5</TargetFrameworkLocation>
+          <CRMReferenceDirectory>C:\ProgramData\Simpler Software\CRM Solution Manager\CRM References\6.0</CRMReferenceDirectory>
+          <AllowDuplicateTypes>False</AllowDuplicateTypes>
+          <AllowDuplicateResources>False</AllowDuplicateResources>
+          <ProduceDebugInfo>True</ProduceDebugInfo>
+          <ILMergeOuputDirectory>\ILMerge</ILMergeOuputDirectory>
+          <ILMergeOutputAssemblyName>Case - Auto Number Plugin.dll</ILMergeOutputAssemblyName>
+        </Project>
+        <Project type="Assembly">
+          <AssemblyReferences>
+            <AssemblyReference>
+              <Name>microsoft.crm.sdk.proxy</Name>
+            </AssemblyReference>
+            <AssemblyReference>
+              <Name>microsoft.xrm.sdk</Name>
+            </AssemblyReference>
+            <AssemblyReference>
+              <Name>microsoft.xrm.sdk.workflow</Name>
+            </AssemblyReference>
+          </AssemblyReferences>
+          <DuplicateTypes />
+          <ReferenceDirectories />
+          <Files>
+            <File FileType="13">
+              <CRMId>7963c442-9d7d-e511-80e5-000c29d78738</CRMId>
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+            </File>
+          </Files>
+          <Name>Case - Associate NPI</Name>
+          <UseILMerge>False</UseILMerge>
+          <CopyAttributes>True</CopyAttributes>
+          <Closed>True</Closed>
+          <Log>False</Log>
+          <OverrideCRMReferenceDirectory>False</OverrideCRMReferenceDirectory>
+          <OverrideTargetFrameworkLocation>False</OverrideTargetFrameworkLocation>
+          <TargetFrameworkLocation>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5</TargetFrameworkLocation>
+          <CRMReferenceDirectory>C:\ProgramData\Simpler Software\CRM Solution Manager\CRM References\6.0</CRMReferenceDirectory>
+          <AllowDuplicateTypes>False</AllowDuplicateTypes>
+          <AllowDuplicateResources>False</AllowDuplicateResources>
+          <ProduceDebugInfo>True</ProduceDebugInfo>
+          <ILMergeOuputDirectory>\ILMerge</ILMergeOuputDirectory>
+          <ILMergeOutputAssemblyName>Case - Asspociate NPI.dll</ILMergeOutputAssemblyName>
+        </Project>
+        <Project type="Assembly">
+          <AssemblyReferences>
+            <AssemblyReference>
+              <Name>Microsoft.Xrm.Sdk</Name>
+            </AssemblyReference>
+          </AssemblyReferences>
+          <DuplicateTypes />
+          <ReferenceDirectories />
+          <Files>
+            <File FileType="13">
+              <AutoBackupFileOnPublish>False</AutoBackupFileOnPublish>
+              <CRMId>253b33ad-f7fc-e511-80e0-5065f38a5ba1</CRMId>
+            </File>
+          </Files>
+          <Name>Close Email Cases</Name>
+          <UseILMerge>False</UseILMerge>
+          <CopyAttributes>True</CopyAttributes>
+          <Closed>True</Closed>
+          <Log>False</Log>
+          <OverrideCRMReferenceDirectory>False</OverrideCRMReferenceDirectory>
+          <OverrideTargetFrameworkLocation>False</OverrideTargetFrameworkLocation>
+          <TargetFrameworkLocation>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5</TargetFrameworkLocation>
+          <CRMReferenceDirectory>C:\ProgramData\Simpler Software\CRM Solution Manager\CRM References\6.0</CRMReferenceDirectory>
+          <AllowDuplicateTypes>False</AllowDuplicateTypes>
+          <AllowDuplicateResources>False</AllowDuplicateResources>
+          <ProduceDebugInfo>True</ProduceDebugInfo>
+          <ILMergeOuputDirectory>\ILMerge</ILMergeOuputDirectory>
+          <ILMergeOutputAssemblyName>Close Email Cases.dll</ILMergeOutputAssemblyName>
+        </Project>
+      </Projects>
+      <DiscoveryURL>https://disco.crm.dynamics.com/xrmservices/2011/discovery.svc</DiscoveryURL>
+      <OrganizationURL>https://npi-test.api.crm.dynamics.com</OrganizationURL>
+      <CurrentSolution type="EntityReference">
+        <Id>05ead5a5-a607-4d14-a9b1-a07fbc937673</Id>
+        <Name>CallCenterBase</Name>
+      </CurrentSolution>
+      <OrganizationDisplayName>NPI Test</OrganizationDisplayName>
+      <OrganizationName>org0df514d5</OrganizationName>
+      <OrganizationVersion>8.0.1</OrganizationVersion>
+      <AutoBackupFilesOnPublish>False</AutoBackupFilesOnPublish>
+    </Organization>
+  </Organizations>
+</CRMSolutionManagerConfigFile>

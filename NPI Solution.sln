@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPI Solution Resources", "NPI Solution Resources\NPI Solution Resources.csproj", "{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "NPI Solution Reports", "NPI Solution Reports\NPI Solution Reports.rptproj", "{747C5E8A-3AD3-448E-AC98-342C573CAB3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Case - Auto Number Plugin", "Autonumber\Case - Auto Number Plugin.csproj", "{DB3094C7-3772-43CD-9616-219CC0CDD934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Case - Associate NPI", "Case - Associate NPI\Case - Associate NPI.csproj", "{03282D15-B97D-4191-9CCD-E998D8B1FBB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Close Email Cases", "Close Email Cases\Close Email Cases.csproj", "{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Populate Emails Without Cases", "Populate Emails Without Cases\Populate Emails Without Cases.csproj", "{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clone Case", "Clone Case\Clone Case.csproj", "{1937B3B6-3B52-4A4A-865B-2A0A1C977261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Set Email Case Id", "Set Email Case Id\Set Email Case Id.csproj", "{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.Debug|Any CPU.ActiveCfg = Debug
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.Debug|Any CPU.Build.0 = Debug
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.Debug|Any CPU.Deploy.0 = Debug
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.Release|Any CPU.ActiveCfg = Release
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.Release|Any CPU.Build.0 = Release
+		{747C5E8A-3AD3-448E-AC98-342C573CAB3F}.Release|Any CPU.Deploy.0 = Release
+		{DB3094C7-3772-43CD-9616-219CC0CDD934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3094C7-3772-43CD-9616-219CC0CDD934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3094C7-3772-43CD-9616-219CC0CDD934}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3094C7-3772-43CD-9616-219CC0CDD934}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{DB3094C7-3772-43CD-9616-219CC0CDD934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3094C7-3772-43CD-9616-219CC0CDD934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03282D15-B97D-4191-9CCD-E998D8B1FBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03282D15-B97D-4191-9CCD-E998D8B1FBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03282D15-B97D-4191-9CCD-E998D8B1FBB6}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{03282D15-B97D-4191-9CCD-E998D8B1FBB6}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{03282D15-B97D-4191-9CCD-E998D8B1FBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03282D15-B97D-4191-9CCD-E998D8B1FBB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE1C0C3-66B5-4F85-9F38-F72D0EBBE869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B2B2CC-EAA3-45BD-A25E-0655DC5DB0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1937B3B6-3B52-4A4A-865B-2A0A1C977261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1937B3B6-3B52-4A4A-865B-2A0A1C977261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1937B3B6-3B52-4A4A-865B-2A0A1C977261}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{1937B3B6-3B52-4A4A-865B-2A0A1C977261}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{1937B3B6-3B52-4A4A-865B-2A0A1C977261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1937B3B6-3B52-4A4A-865B-2A0A1C977261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D444B3F-AA70-4B01-8CC1-DEA16ADD2483}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://engage360.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NPI\u0020Solution\u0020Reports\\NPI\u0020Solution\u0020Reports.rptproj
+		SccProjectName1 = NPI\u0020Solution\u0020Reports
+		SccLocalPath1 = NPI\u0020Solution\u0020Reports
+		SccProjectUniqueName2 = NPI\u0020Solution\u0020Resources\\NPI\u0020Solution\u0020Resources.csproj
+		SccProjectName2 = NPI\u0020Solution\u0020Resources
+		SccLocalPath2 = NPI\u0020Solution\u0020Resources
+		SccProjectUniqueName3 = Case\u0020-\u0020Associate\u0020NPI\\Case\u0020-\u0020Associate\u0020NPI.csproj
+		SccProjectName3 = Case\u0020-\u0020Associate\u0020NPI
+		SccLocalPath3 = Case\u0020-\u0020Associate\u0020NPI
+		SccProjectUniqueName4 = Close\u0020Email\u0020Cases\\Close\u0020Email\u0020Cases.csproj
+		SccProjectName4 = Close\u0020Email\u0020Cases
+		SccLocalPath4 = Close\u0020Email\u0020Cases
+		SccProjectUniqueName5 = Autonumber\\Case\u0020-\u0020Auto\u0020Number\u0020Plugin.csproj
+		SccProjectName5 = Autonumber
+		SccLocalPath5 = Autonumber
+		SccProjectUniqueName6 = Populate\u0020Emails\u0020Without\u0020Cases\\Populate\u0020Emails\u0020Without\u0020Cases.csproj
+		SccProjectName6 = Populate\u0020Emails\u0020Without\u0020Cases
+		SccLocalPath6 = Populate\u0020Emails\u0020Without\u0020Cases
+		SccProjectUniqueName7 = Clone\u0020Case\\Clone\u0020Case.csproj
+		SccProjectName7 = Clone\u0020Case
+		SccLocalPath7 = Clone\u0020Case
+		SccProjectUniqueName8 = Set\u0020Email\u0020Case\u0020Id\\Set\u0020Email\u0020Case\u0020Id.csproj
+		SccProjectName8 = Set\u0020Email\u0020Case\u0020Id
+		SccLocalPath8 = Set\u0020Email\u0020Case\u0020Id
+	EndGlobalSection
+EndGlobal

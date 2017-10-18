@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32E665A7-EDBA-4EBA-B5A4-D9DF5F80A366}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NPI_Solution_Resources</RootNamespace>
+    <AssemblyName>NPI Solution Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\cog_\Images\Clone16.png" />
+    <Content Include="Images\cog_\Images\Clone32.png" />
+    <Content Include="Images\cog_\Images\icoTimelineCall.png" />
+    <Content Include="Images\cog_\Images\icoTimelineCaseStatus.png" />
+    <Content Include="Images\cog_\Images\icoTimelineCreated.png" />
+    <Content Include="Images\cog_\Images\icoTimelineEmail.png" />
+    <Content Include="Images\cog_\Images\icoTimelineTask.png" />
+    <Content Include="Images\cog_\Images\icoTimelineTaskAlert.png" />
+    <Content Include="Images\cog_\Images\timelineCognosante.png" />
+    <Content Include="Javascript\cog_phoneCallJavaScript.js" />
+    <Content Include="Javascript\cog_\Scripts\js\storyjs_embed.js" />
+    <Content Include="Javascript\cog_\Scripts\js\timeline.min.js" />
+    <Content Include="Javascript\cog_\Scripts\ApplicationRequest\ApplicationRequestOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\ApplicationRequest\ApplicationRequstFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\ApplicationRibbons\ApplicationRibbonsScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\AssistancePilot\AssistancePilotFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\AssistancePilot\AssistancePilotOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\CallAudit\CallAuditFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\CallAudit\CallAuditOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Case\CaseFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\Case\CaseOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Case\SharePointDocs.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\CrmUser.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\FormConstants.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\FormMainScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\FormUtilities.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\jquery.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\json2.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\plugins.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\require.js" />
+    <Content Include="Javascript\cog_\Scripts\Common\XrmServiceToolkit.js" />
+    <Content Include="Javascript\cog_\Scripts\DataEntryAudit\DataEntryAuditFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\DataEntryAudit\DataEntryAuditOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\EFI\EFIFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\EFI\EFIOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Email\EmailFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\Email\EmailOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Letter\LetterFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\Letter\LetterOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Note\NoteFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\Note\NoteOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\PhoneCall\PhoneCallFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\PhoneCall\PhoneCallOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\ProcessMonitoringAudit\ProcessMonitoringAuditFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\ProcessMonitoringAudit\ProcessMonitoringAuditOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Queue\GetNextScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\SolicitedCorrespondence\SolicitedCorrespondenceFormScripts.js" />
+    <Content Include="Javascript\cog_\Scripts\SolicitedCorrespondence\SolicitedCorrespondenceOnChangeEvents.js" />
+    <Content Include="Javascript\cog_\Scripts\Timeline\config.js" />
+    <Content Include="Javascript\cog_\Scripts\Timeline\configDev.js" />
+    <Content Include="Javascript\cog_\Scripts\Timeline\jQuery.js" />
+    <Content Include="Javascript\cog_\Scripts\Timeline\timelineCustom.js" />
+    <Content Include="Javascript\Intellisense Files\ESANTE Case Form - Error Resolution - EFI %28cog_case%29.js" />
+    <Content Include="Javascript\Intellisense Files\ESANTE Case Form - Error Resolution - Paper %28cog_case%29.js" />
+    <Content Include="Javascript\Intellisense Files\ESANTE Case Form - Error Resolution - Web %28cog_case%29.js" />
+    <Content Include="Javascript\Intellisense Files\Xrm.js" />
+    <Content Include="Styles\cog_timelineCustom.css" />
+    <Content Include="Styles\cog_\css\timeline.css" />
+    <Content Include="Web Files\cog_AssistancePilotNotes.html" />
+    <Content Include="Web Files\cog_CorrespondenceNotes.html" />
+    <Content Include="Web Files\cog_EmailNotes.html" />
+    <Content Include="Web Files\cog_EREFINotes.html" />
+    <Content Include="Web Files\cog_ERPaperNotes.html" />
+    <Content Include="Web Files\cog_ERWebNotes.html" />
+    <Content Include="Web Files\cog_FraudNotes.html" />
+    <Content Include="Web Files\cog_InboundCallNotes.html" />
+    <Content Include="Web Files\cog_LetterResponses.html" />
+    <Content Include="Web Files\cog_NPIDirections.html" />
+    <Content Include="Web Files\cog_OutboundCallNotes.html" />
+    <Content Include="Web Files\cog_PaperApplicationNotes.html" />
+    <Content Include="Web Files\cog_SolicitedCorrNotes.html" />
+    <Content Include="Web Files\cog_Timeline.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sitemap\Sitemap.crmsitemap" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Charts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="TypeScript\Intellisense Files\ESANTE Case Form - Error Resolution - EFI %28cog_case%29.ts" />
+    <TypeScriptCompile Include="TypeScript\Intellisense Files\ESANTE Case Form - Error Resolution - Paper %28cog_case%29.ts" />
+    <TypeScriptCompile Include="TypeScript\Intellisense Files\ESANTE Case Form - Error Resolution - Web %28cog_case%29.ts" />
+    <TypeScriptCompile Include="TypeScript\Intellisense Files\Xrm.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>43954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:43954/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

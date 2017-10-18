@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix7">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>7.07292in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>6.67535in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle5">
+                      <ReportItems>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!cog_datecompletedValue.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!cog_totext.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!cog_attention.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!cog_address1.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!cog_address2.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!cog_city.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!cog_state.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!cog_zip.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>M/d/yyyy</Format>
+                                    <TextDecoration>None</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>M/d/yyyy</Format>
+                                    <TextDecoration>None</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>M/d/yyyy</Format>
+                                    <TextDecoration>None</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>M/d/yyyy</Format>
+                                    <TextDecoration>None</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Tracking ID Number: </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!cog_trackingid.Value</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Case Number: </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!cog_caseid.Value</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Dear Applicant:</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>This letter serves to inform you that your </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!cog_applicationtype.Value</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value> application for a National Provider Identifier (NPI) has been rejected for the following reason:</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!description.Value</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>If you have any questions regarding this matter or need additional assistance, you may e-mail the NPI Enumerator at </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>customerservice@npienumerator.com</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>Underline</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value> or contact the NPI Enumerator at 1-800-465-3203.</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Sincerely,</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!aa_firstname.Value</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Left(Fields!aa_lastname.Value,1)</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Customer Service Representative</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>M/d/yyyy</Format>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>M/d/yyyy</Format>
+                                    <TextDecoration>None</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Height>6.67535in</Height>
+                          <Width>7.07292in</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="activityid">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!activityid.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!activityid.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>0.03125in</Size>
+                <CellContents>
+                  <Textbox Name="activityid1">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Fields!activityid.Value</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>activityid1</rd:DefaultName>
+                    <Visibility>
+                      <Hidden>true</Hidden>
+                    </Visibility>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Height>6.67535in</Height>
+        <Width>7.10417in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>6.67535in</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>7.10417in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Image2">
+          <Source>Embedded</Source>
+          <Value>CMS_Logo</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.38541in</Top>
+          <Left>0.03125in</Left>
+          <Height>0.57292in</Height>
+          <Width>2.8125in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Textbox3">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value />
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value />
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value />
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox3</rd:DefaultName>
+          <Top>0.06597in</Top>
+          <Left>0.03125in</Left>
+          <Height>0.25in</Height>
+          <Width>1in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>1.11458in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>NPI Enumerator</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>P.O. Box 6059</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Fargo, ND 58108-6059</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>800-465-3203 800-692-2326 (TTY)</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>customerservice@NPIenumerator.com</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>29308049                                                                                                                                   (4612386)4-05</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>                                                                                                                                                    NPIT-7.1.89.7 Rev 2.1</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>DimGray</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.01389in</Top>
+          <Height>1.10069in</Height>
+          <Width>7.10417in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="OnPrem">
+      <ConnectionProperties>
+        <DataProvider>MSCRMFETCH</DataProvider>
+        <ConnectString>https://npi-test.crm.dynamics.com;org0df514d5</ConnectString>
+        <Prompt>Specify a user name and password for data source OnPrem:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>35ba7467-e9e9-4258-b4f4-66b9dae71ef4</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>OnPrem</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Date">
+            <Value>=Parameters!Date.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false"&gt;
+  &lt;entity name="letter"&gt;
+    &lt;attribute name="activityid" /&gt;
+    &lt;attribute name="description" /&gt;
+    &lt;attribute name="cog_zip" /&gt;
+    &lt;attribute name="cog_trackingid" /&gt;
+    &lt;attribute name="cog_totext" /&gt;
+    &lt;attribute name="cog_state" /&gt;
+    &lt;attribute name="cog_rejectionduedate" /&gt;
+    &lt;attribute name="cog_npiapplicationsubmitmethod" /&gt;
+    &lt;attribute name="cog_npi" /&gt;
+    &lt;attribute name="cog_lettertype" /&gt;
+    &lt;attribute name="cog_lastcontactattemptdate" /&gt;
+    &lt;attribute name="cog_fromtext" /&gt;
+    &lt;attribute name="cog_efiorganizationname" /&gt;
+    &lt;attribute name="cog_duedate" /&gt;
+    &lt;attribute name="cog_datecompleted" /&gt;
+    &lt;attribute name="cog_city" /&gt;
+    &lt;attribute name="cog_caseid" /&gt;
+    &lt;attribute name="cog_attention" /&gt;
+    &lt;attribute name="cog_applicationtype" /&gt;
+    &lt;attribute name="cog_address2" /&gt;
+    &lt;attribute name="cog_address1" /&gt;
+    &lt;order attribute="cog_zip" descending="false" /&gt;
+    &lt;filter type="and"&gt;
+      &lt;condition attribute="cog_lettertype" operator="eq" value="181310008" /&gt;
+      &lt;condition attribute="cog_datecompleted" operator="on" value="@Date" /&gt;
+    &lt;/filter&gt;
+    &lt;link-entity name="systemuser" from="systemuserid" to="cog_userid" alias="aa"&gt;
+		&lt;attribute name="lastname" /&gt;
+		&lt;attribute name="firstname" /&gt;
+    &lt;/link-entity&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</CommandText>
+        <Timeout>300</Timeout>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="activityid">
+          <DataField>activityid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_zip">
+          <DataField>cog_zip</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="description">
+          <DataField>description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_attention">
+          <DataField>cog_attention</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_trackingid">
+          <DataField>cog_trackingid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_totext">
+          <DataField>cog_totext</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_rejectionduedate">
+          <DataField>cog_rejectionduedate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_state">
+          <DataField>cog_state</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_fromtext">
+          <DataField>cog_fromtext</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_rejectionduedateValue">
+          <DataField>cog_rejectionduedateValue</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cog_npiapplicationsubmitmethod">
+          <DataField>cog_npiapplicationsubmitmethod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_datecompleted">
+          <DataField>cog_datecompleted</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_datecompletedValue">
+          <DataField>cog_datecompletedValue</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cog_npiapplicationsubmitmethodValue">
+          <DataField>cog_npiapplicationsubmitmethodValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cog_npi">
+          <DataField>cog_npi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_city">
+          <DataField>cog_city</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_lettertype">
+          <DataField>cog_lettertype</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_caseid">
+          <DataField>cog_caseid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_lettertypeValue">
+          <DataField>cog_lettertypeValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cog_caseidValue">
+          <DataField>cog_caseidValue</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
+        </Field>
+        <Field Name="cog_caseidEntityName">
+          <DataField>cog_caseidEntityName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_lastcontactattemptdate">
+          <DataField>cog_lastcontactattemptdate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_address2">
+          <DataField>cog_address2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_lastcontactattemptdateValue">
+          <DataField>cog_lastcontactattemptdateValue</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cog_address1">
+          <DataField>cog_address1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_efiorganizationname">
+          <DataField>cog_efiorganizationname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_duedate">
+          <DataField>cog_duedate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_duedateValue">
+          <DataField>cog_duedateValue</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cog_applicationtype">
+          <DataField>cog_applicationtype</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cog_applicationtypeValue">
+          <DataField>cog_applicationtypeValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="aa_lastname">
+          <DataField>aa_lastname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="aa_firstname">
+          <DataField>aa_firstname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Date">
+      <DataType>DateTime</DataType>
+      <Prompt>Date</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="CMS_Logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>718c76d8-8495-4417-914c-b16ef71890a0</rd:ReportID>
+</Report>

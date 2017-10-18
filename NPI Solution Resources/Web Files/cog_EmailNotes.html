@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="../WebResources/cog_/Scripts/Common/XrmServiceToolkit.js"></script>
+    <script>
+        var Xrm = window.parent.Xrm;
+
+        $(function () {
+            $("#menu").menu({
+                select: function (event, ui) {
+                    Xrm.Page.data.entity.save("save");
+                    if (ui.item.attr("fetchable") === "true")
+                        RetrieveSelection(ui.item.text());
+                }
+            });
+        });
+
+        function RetrieveSelection( name ) {
+            var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>" +
+                "<entity name='cog_quickwrite'>" +
+                "<attribute name='cog_quickwriteid' />" +
+                "<attribute name='cog_text' />" +
+                "<filter type='and'>" +
+                "<condition attribute='cog_entityname' operator='eq' value='cog_note - email' />" +
+                "<condition attribute='cog_name' operator='eq' value='" + name + "' />" +
+                "</filter>" +
+                "</entity>" +
+                "</fetch>";
+
+            var records = XrmServiceToolkit.Soap.Fetch( fetchXml );
+
+            if ( records.length < 1 ) {
+                alert( name + " does not exist in Quick Write records. Please contact Administrator" );
+                return;
+            }
+
+            var currentDescription = Xrm.Page.getAttribute( "cog_note" ).getValue( );
+
+            if ( currentDescription !== null )
+                Xrm.Page.getAttribute( "cog_note" ).setValue( currentDescription + "\r\n" + "\r\n" + records[ 0 ].attributes.cog_text.value );
+            else
+                Xrm.Page.getAttribute( "cog_note" ).setValue( records[ 0 ].attributes.cog_text.value );
+        }
+    </script>
+
+    <style>
+        .ui-menu {
+            font-size: 10px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="menu">
+        <li fetchable="true">Deceased Provider - An email was received verifying the fact of death.</li>
+        <li fetchable="true">Incorrect Entity Type Selected</li>
+        <li fetchable="true">Keying Error</li>
+        <li fetchable="true">Keylogger - Email Confirmation Received</li>
+        <li fetchable="false">
+            Researching Email Inquiry
+            <ul>
+                <li fetchable="true">Free Form Response</li>
+                <li fetchable="true">No Match</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Resent Notification
+            <ul>
+                <li fetchable="true">Non Authorized Contact - No Title</li>
+                <li fetchable="true">Non Authorized Contact - Title</li>
+            </ul>
+        </li>
+        <li fetchable="true">Undeliverable Email</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "RecentSetting": {
+    "_organizationURL": "https://npidev.api.crm9.dynamics.com",
+    "_recentPassword": "MfuFOexDNFWj4r53Kzk8Cg==",
+    "WindowsLoginName": "Administrator",
+    "RecentUsername": "jgonzalez@gc.cognosante.com",
+    "StoreRecentPassword": true
+  },
+  "UserSolutionSettings": [
+    {
+      "_organizationURL": "https://npi-test.api.crm.dynamics.com",
+      "_recentPassword": "2dpaw5yXb1imYUcdYty36g==",
+      "WindowsLoginName": "Administrator",
+      "RecentUsername": "joshua.gonzalez@cognosante.com",
+      "StoreRecentPassword": true
+    },
+    {
+      "_organizationURL": "https://npiprod.api.crm9.dynamics.com",
+      "_recentPassword": "MfuFOexDNFWj4r53Kzk8Cg==",
+      "WindowsLoginName": "Administrator",
+      "RecentUsername": "jgonzalez@gc.cognosante.com",
+      "StoreRecentPassword": true
+    },
+    {
+      "_organizationURL": "http://crm:5555/npi",
+      "_recentPassword": "E2MaeMaxMWvEhEp/JMY28g==",
+      "WindowsLoginName": "Administrator",
+      "RecentUsername": "gonzo\\administrator",
+      "StoreRecentPassword": true
+    },
+    {
+      "_organizationURL": "https://npiuat.api.crm9.dynamics.com",
+      "_recentPassword": "kDOTUOJF8qkwuq1lyZmJcg==",
+      "WindowsLoginName": "Administrator",
+      "RecentUsername": "jgonzalez@gc.cognosante.com",
+      "StoreRecentPassword": true
+    },
+    {
+      "_organizationURL": "https://npidev.api.crm9.dynamics.com",
+      "_recentPassword": "MfuFOexDNFWj4r53Kzk8Cg==",
+      "WindowsLoginName": "Administrator",
+      "RecentUsername": "jgonzalez@gc.cognosante.com",
+      "StoreRecentPassword": true
+    },
+    {
+      "_organizationURL": "http://crm:5555/npi",
+      "WindowsLoginName": "Administrator",
+      "RecentUsername": "gonzo\\administrator",
+      "StoreRecentPassword": false
+    }
+  ]
+}

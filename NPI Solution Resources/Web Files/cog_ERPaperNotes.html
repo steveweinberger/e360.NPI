@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="../WebResources/cog_/Scripts/Common/XrmServiceToolkit.js"></script>
+    <script>
+        var Xrm = window.parent.Xrm;
+
+        $(function () {
+            $("#menu").menu({
+                select: function (event, ui) {
+                    Xrm.Page.data.entity.save("save");
+                    if (ui.item.attr("fetchable") === "true")
+                        RetrieveSelection(ui.item.text());
+                }
+            });
+        });
+
+        $( function( ) {
+            $( "#menu1" ).menu( {
+                select : function( event, ui ) {
+                    if ( ui.item.attr( "fetchable" ) === "true" )
+                        RetrieveSelection( ui.item.text( ) );
+                }
+            } );
+        } );
+
+        function RetrieveSelection( name ) {
+            var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>" +
+                "<entity name='cog_quickwrite'>" +
+                "<attribute name='cog_quickwriteid' />" +
+                "<attribute name='cog_text' />" +
+                "<filter type='and'>" +
+                "<condition attribute='cog_entityname' operator='eq' value='cog_note - er paper' />" +
+                "<condition attribute='cog_name' operator='eq' value='" + name + "' />" +
+                "</filter>" +
+                "</entity>" +
+                "</fetch>";
+
+            var records = XrmServiceToolkit.Soap.Fetch( fetchXml );
+
+            if ( records.length < 1 ) {
+                alert( name + " does not exist in Quick Write records. Please contact Administrator" );
+                return;
+            }
+
+            var currentDescription = Xrm.Page.getAttribute( "cog_note" ).getValue( );
+
+            if ( currentDescription !== null )
+                Xrm.Page.getAttribute( "cog_note" ).setValue( currentDescription + "\r\n" + "\r\n" + records[ 0 ].attributes.cog_text.value );
+            else
+                Xrm.Page.getAttribute( "cog_note" ).setValue( records[ 0 ].attributes.cog_text.value );
+        }
+    </script>
+
+    <style>
+        .ui-menu {
+            font-size: 10px;
+            width: 150px;
+        }
+
+        .ui-menu1 {
+            font-size: 10px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="menu" style="float: left;">
+    <li fetchable="false">
+        NPPES Fields that Require Extra Attention
+        <ul>
+            <li fetchable="true">Subparting - Updated</li>
+            <li fetchable="true">Subparting - Advised</li>
+            <li fetchable="true">Sole Proprietor - Updated</li>
+            <li fetchable="true">Sole Proprietor - Advised</li>
+            <li fetchable="true">Medicare ID - Type Unspecified</li>
+            <li fetchable="true">Primary Taxonomy</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Address Errors
+        <ul>
+            <li fetchable="true">Address - Initial Applications</li>
+            <li fetchable="true">Switching Address line 1 and line 2</li>
+            <li fetchable="true">Practice Address - Removed Box Number</li>
+            <li fetchable="true">Address - Changes Accepted</li>
+            <li fetchable="true">Address - Changes Rejected</li>
+            <li fetchable="true">Mailing and Practice Address - Changes - Switch Address line 1 and line 2</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Obtaining Information
+        <ul>
+            <li fetchable="true">Obtaining Information</li>
+            <li fetchable="true">Information is Missing or Incorrect</li>
+            <li fetchable="true">Obtaining Information 1st contact</li>
+            <li fetchable="true">Obtaining Information 2nd contact</li>
+            <li fetchable="true">Development Letter</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Disallowing Application/Changes
+        <ul>
+            <li fetchable="true">Disallowing an Application, Change, Deact. Or React. - No Response to Development</li>
+            <li fetchable="true">Disallowing an Application - Provider/Contact Request</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Misc Notes
+        <ul>
+            <li fetchable="true">Deleting Letters</li>
+            <li fetchable="true">Applications Pending for Verification - Non NPPES Generated Errors</li>
+            <li fetchable="true">Keying Error</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        SSN Errors
+        <ul>
+            <li fetchable="true">SSN Validation</li>
+            <li fetchable="true">SSN Duplicate</li>
+            <li fetchable="true">SSN Changes</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Gatekeeper Errors
+        <ul>
+            <li fetchable="true">Individual Gatekeeper - No Call</li>
+            <li fetchable="true">Individual Gatekeeper - Call</li>
+            <li fetchable="true">Organization Gatekeeper - No Call</li>
+            <li fetchable="true">Organization Gatekeeper - Call</li>
+            <li fetchable="true">Organization Gatekeeper - Matching Multiple NPI(s) (more than 4)</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        LST Errors
+        <ul>
+            <li fetchable="true">LST - Possible Duplicate</li>
+            <li fetchable="true">LST - Invalid License</li>
+            <li fetchable="true">Invalid Information Provided in License Field</li>
+            <li fetchable="true">Individual LST - verified duplicate - make outbound call to Provider with duplicate license </li>
+            <li fetchable="true">LST Change - Overrode</li>
+            <li fetchable="true">LST Change - Contacted</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Paper Data Errors
+        <ul>
+            <li fetchable="true">Individual Applications</li>
+            <li fetchable="true">Organization Applications</li>
+            <li fetchable="true">Unclear Entity Types</li>
+            <li fetchable="true">Change Applications</li>
+            <li fetchable="true">Signatures Do Not Match - No Letter</li>
+            <li fetchable="true">Signatures Do Not Match - Letter</li>
+        </ul>
+    </li>
+</ul>
+
+<ul id="menu1" style="display:inline-block;">
+    <li fetchable="false">
+        Change Application Errors
+        <ul>
+            <li fetchable="true">Date of Birth Change</li>
+            <li fetchable="true">SSN Change - IDs not provided</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Deactivation Application Errors
+        <ul>
+            <li fetchable="true">Organization Deactivation</li>
+            <li fetchable="true">Individual Deactivation</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Reactivation Application Errors
+        <ul>
+            <li fetchable="true">Organization Reactivation</li>
+            <li fetchable="true">Individual Reactivation</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        License Validation
+        <ul>
+            <li fetchable="true">License Validation - Website Validation</li>
+            <li fetchable="true">License Validation - Verbal Confirmation</li>
+            <li fetchable="true">License Validation - Corrected License</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Invalid EIN - Reactivations
+        <ul>
+            <li fetchable="true">Reactivations - Obtaining Information</li>
+            <li fetchable="true">Reactivations - 1st Contact</li>
+            <li fetchable="true">Reactivations - 2nd Contact</li>
+            <li fetchable="true">Reactivations - Development Letter</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Invalid EIN - Non Original Signature
+        <ul>
+            <li fetchable="true">Non Original Signature - 1st contact</li>
+            <li fetchable="true">Non Original Signature - 2nd contact</li>
+            <li fetchable="true">Non Original Signature - Development Letter</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Invalid EIN - Non CMS Approved Form
+        <ul>
+            <li fetchable="true">Non CMS Approved Form - Obtaining Information</li>
+            <li fetchable="true">Non CMS Approved Form - 1st contact</li>
+            <li fetchable="true">Non CMS Approved Form - 2nd contact</li>
+            <li fetchable="true">Non CMS Approved Form - Development Letter</li>
+        </ul>
+    </li>
+    <li fetchable="false">
+        Invalid EIN - Missing Pages/Information
+        <ul>
+            <li fetchable="true">Missing Pages/Information - Obtaining Information</li>
+            <li fetchable="true">Missing Pages/Information - 1st contact</li>
+            <li fetchable="true">Missing Pages/Information - 2nd contact</li>
+            <li fetchable="true">Missing Pages/Information - Development Letter</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

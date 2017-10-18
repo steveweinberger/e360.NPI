@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Letter Responses</title>
+    <meta charset="utf-8"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="../WebResources/cog_/Scripts/Common/XrmServiceToolkit.js"></script>
+    <script>
+        var Xrm = window.parent.Xrm;
+
+        $( function( ) {
+            $( "#menu" ).menu( {
+                select : function( event, ui ) {
+                    if ( ui.item.attr( "fetchable" ) === "true" )
+                        RetrieveSelection( ui.item.text( ) );
+                }
+            } );
+        } );
+
+        function RetrieveSelection( name ) {
+            var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>" +
+                "<entity name='cog_quickwrite'>" +
+                "<attribute name='cog_quickwriteid' />" +
+                "<attribute name='cog_text' />" +
+                "<filter type='and'>" +
+                "<condition attribute='cog_entityname' operator='eq' value='letter' />" +
+                "<condition attribute='cog_name' operator='eq' value='" + name + "' />" +
+                "</filter>" +
+                "</entity>" +
+                "</fetch>";
+
+            var records = XrmServiceToolkit.Soap.Fetch( fetchXml );
+
+            if ( records.length < 1 ) {
+                alert( name + " does not exist in Quick Write records. Please contact Administrator" );
+                return;
+            }
+
+            var currentDescription = Xrm.Page.getAttribute( "description" ).getValue( );
+
+            if ( currentDescription !== null )
+                Xrm.Page.getAttribute( "description" ).setValue( currentDescription + "\r\n" + "\r\n" + records[ 0 ].attributes.cog_text.value );
+            else
+                Xrm.Page.getAttribute( "description" ).setValue( records[ 0 ].attributes.cog_text.value );
+        }
+    </script>
+
+    <style>
+        .ui-menu {
+            font-size: 10px;
+            width: 150px;
+        }
+    </style>
+
+</head>
+<body>
+
+<ul id="menu">
+<li fetchable="false">
+    Development Letter Responses (PART 1)
+    <ul>
+        <li fetchable="true">Request to Contact the NPI Enumerator</li>
+        <li fetchable="true">Entity Type</li>
+        <li fetchable="true">Individual Identifying Information</li>
+        <li fetchable="false">
+            SSN Responses
+            <ul>
+                <li fetchable="true">SSN Validation</li>
+                <li fetchable="true">Paper Applications Only</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Foreign Provider Responses
+            <ul>
+                <li fetchable="true">Foreign Provider – Missing Two Forms of Identification</li>
+                <li fetchable="true">Foreign Provider – Missing One Additional Form of Identification</li>
+                <li fetchable="true">Foreign Provider - Missing Letter of Explanation of Residency</li>
+            </ul>
+        </li>
+        <li fetchable="true">Organization Identifying Information</li>
+        <li fetchable="true">Mailing Address</li>
+        <li fetchable="true">Practice Address</li>
+        <li fetchable="true">Other Provider Identifiers</li>
+        <li fetchable="false">
+            Provider Taxonomy Code and License Number Information - Paper
+            <ul>
+                <li fetchable="true">LST Error - Paper</li>
+                <li fetchable="true">Invalid Taxonomy Code Provided</li>
+                <li fetchable="true">Taxonomy Code Not Specific</li>
+                <li fetchable="true">Missing LST Information</li>
+                <li fetchable="true">Invalid License – Individual Taxonomy Code that Requires License - Paper</li>
+                <li fetchable="true">Primary Taxonomy Code</li>
+                <li fetchable="true">Organization Taxonomy Code provided – Sole Proprietor is Blank or Marked No</li>
+                <li fetchable="true">License Validation Error</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li fetchable="false">
+    Development Letter Responses (Part 2)
+    <ul>
+        <li fetchable="false">
+            Provider Taxonomy Code and License Number Information - Web
+            <ul>
+                <li fetchable="true">LST Error - Web</li>
+                <li fetchable="true">Invalid License – Individual Taxonomy Code that Requires License - Web</li>
+            </ul>
+        </li>
+        <li fetchable="true">Organization Gatekeeper Error</li>
+        <li fetchable="true">Authorized Official Information</li>
+        <li fetchable="true">Contact Person Information</li>
+        <li fetchable="true">Unable to Contact Using Telephone Numbers Provided</li>
+        <li fetchable="false">
+            Change Application Development Responses
+            <ul>
+                <li fetchable="true">Copy of ID Too Dark</li>
+                <li fetchable="true">Date of Birth Valid ID Request</li>
+                <li fetchable="true">SSN Valid ID Request</li>
+                <li fetchable="true">Additional ID(s) Requested in Place of SSN</li>
+                <li fetchable="true">Signatures Do Not Match</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Deactivation Application Development Responses
+            <ul>
+                <li fetchable="true">Individual Information Does Not Match - Development</li>
+                <li fetchable="true">Missing Individual Information - Development</li>
+                <li fetchable="true">Organization Information Does Not Match - Development</li>
+                <li fetchable="true">Missing Organization Information - Deactivation</li>
+                <li fetchable="true">Deactivations Due to Death</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Return Application Development Responses
+            <ul>
+                <li fetchable="true">Missing Information</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Invalid EIN Project
+            <ul>
+                <li fetchable="true">Missing LBN/EIN on Deactivation</li>
+                <li fetchable="true">Missing Page 3</li>
+                <li fetchable="true">Authorized Official’s Signature Missing</li>
+                <li fetchable="true">IRS Form Missing for Reactivation</li>
+            </ul>
+        </li>
+        <li fetchable="true">Null Null Records</li>
+
+    </ul>
+</li>
+<li fetchable="false">
+    Return Letter Responses
+    <ul>
+        <li fetchable="false">
+            General Returned Applications (PART 1)
+            <ul>
+                <li fetchable="false">
+                    General Returned Applications
+                    <ul>
+                        <li fetchable="true">Top of Form Cut Off</li>
+                        <li fetchable="true">Bottom of Form Cut Off</li>
+                        <li fetchable="true">Altered Form</li>
+                        <li fetchable="true">Old Form</li>
+                    </ul>
+                </li>
+                <li fetchable="true">Missing One or More Pages of the NPI Application</li>
+                <li fetchable="true">Pencil Used on Application</li>
+                <li fetchable="true">Missing Provider Signature</li>
+                <li fetchable="true">Missing Authorized Official Signature</li>
+                <li fetchable="true">Non-Original Provider Signature</li>
+                <li fetchable="true">Non-Original Authorized Official Signature</li>
+                <li fetchable="true">Not Authorized - Provider Signature</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            General Returned Applications (PART 2)
+            <ul>
+                <li fetchable="true">Not Authorized – Authorized Official Signature</li>
+                <li fetchable="true">Missing NPI</li>
+                <li fetchable="true">Invalid NPI</li>
+                <li fetchable="true">Missing Medicaid State - General</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Initial Application Return Responses (PART 1)
+            <ul>
+                <li fetchable="true">Entity Type Not Marked</li>
+                <li fetchable="true">Both Entity Types are Marked</li>
+                <li fetchable="true">Missing SSN/ITIN/ID for an Individual</li>
+                <li fetchable="true">Invalid ITIN for an Individual</li>
+                <li fetchable="true">Valid ITIN without Identification</li>
+                <li fetchable="true">Missing Individual Identifying Information</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Initial Application Return Responses (PART 2)
+            <ul>
+                <li fetchable="true">Missing Organization Identifying Information</li>
+                <li fetchable="true">Invalid EIN for an Organization</li>
+                <li fetchable="true">Missing Telephone Number</li>
+                <li fetchable="true">Missing Complete Mailing Address</li>
+                <li fetchable="true">Missing Medicaid State - Initial</li>
+                <li fetchable="true">Missing Taxonomy Code Information</li>
+                <li fetchable="true">Missing Authorized Official</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Change Application Return Responses
+            <ul>
+                <li fetchable="true">Not Authorized – Change Specific – Authorized Official Signature</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Deactivation Application Return Responses
+            <ul>
+                <li fetchable="true">Missing Deactivation Reason</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Reactivation Application Return Responses
+            <ul>
+                <li fetchable="true">Missing Reactivation Reason</li>
+                <li fetchable="true">Individual Information Does Not Match - Return<li>
+                <li fetchable="true">Organization Information Does Not Match - Return</li>
+                <li fetchable="true">Missing Individual Information - Return</li>
+                <li fetchable="true">Missing Organization Information - Reactivation</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li fetchable="false">
+    Misc Corr Letter Responses<ul>
+        <li fetchable="false">
+            Solicited Correspondence Responses
+            <ul>
+                <li fetchable="true">Response to a Development Letter for a Change Already Processed</li>
+                <li fetchable="true">Response to a Development Letter for an Initial Application Already Processed</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Invalid EIN Deactivation Project
+            <ul>
+                <li fetchable="true">Entity Type Unclear</li>
+                <li fetchable="true">NPI Missing on Change Form</li>
+                <li fetchable="true">Verification of LBN and/or EIN</li>
+                <li fetchable="true">Invalid IRS Documents for LBN and EIN Verification</li>
+                <li fetchable="true">Reason for Submittal Unclear</li>
+                <li fetchable="true">Missing Signature on 3rd Page</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Invalid ITIN Project
+            <ul>
+                <li fetchable="true">Reactivation was Received</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Changes
+            <ul>
+                <li fetchable="true">Trying to Change Entity Type from Individual to an Organization</li>
+                <li fetchable="true">Trying to Change Entity Type from Organization to Individual</li>
+                <li fetchable="true">Change Application Rejected Due to No Response</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Unsolicited Correspondence Responses
+            <ul>
+                <li fetchable="true">Incomprehensible Request</li>
+                <li fetchable="true">Change Request Application</li>
+                <li fetchable="true">Misrouted Mail</li>
+                <li fetchable="true">Deceased Provider</li>
+                <li fetchable="false">
+                    General NPI
+                    <ul>
+                        <li fetchable="true">Request to Reset User ID and Password</li>
+                        <li fetchable="true">Error Message While Entering Application Online</li>
+                        <li fetchable="true">Application Request</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Fraud Responses
+            <ul>
+                <li fetchable="true">Required Information Not Returned Before Deadline</li>
+                <li fetchable="true">CMS Approved Reissue of NPI Due to Fraud</li>
+                <li fetchable="true">CMS Did Not Approve Reissue of NPI due to Fraud</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li fetchable="false">
+    Misc Reject Letters
+    <ul>
+        <li fetchable="true">The application was requested to be returned</li>
+        <li fetchable="true">The correct information was not received</li>
+        <li fetchable="true">The Application/Update form cannot be processed</li>
+        <li fetchable="true">The application cannot be processed per CMS</li>
+    </ul>
+</li>
+
+</ul>
+
+
+<!--<ul id="menu">
+    <li class="ui-state-disabled">Aberdeen</li>
+    <li>Ada</li>
+    <li>Adamsville</li>
+    <li>Addyston</li>
+    <li>
+        Delphi
+        <ul>
+            <li class="ui-state-disabled">Ada</li>
+            <li>Saarland</li>
+            <li>Salzburg an der schönen Donau</li>
+        </ul>
+    </li>
+    <li>Saarland</li>
+    <li>
+        Salzburg
+        <ul>
+            <li>
+                Delphi
+                <ul>
+                    <li>Ada</li>
+                    <li>Saarland</li>
+                    <li>Salzburg</li>
+                </ul>
+            </li>
+            <li>
+                Delphi
+                <ul>
+                    <li>Ada</li>
+                    <li>Saarland</li>
+                    <li>Salzburg</li>
+                </ul>
+            </li>
+            <li>Perch</li>
+        </ul>
+    </li>
+    <li class="ui-state-disabled">Amesville</li>
+</ul>-->
+</body>
+</html>

@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="../WebResources/cog_/Scripts/Common/XrmServiceToolkit.js"></script>
+    <script>
+        var Xrm = window.parent.Xrm;
+
+        $(function () {
+            $("#menu").menu({
+                select: function (event, ui) {
+                    Xrm.Page.data.entity.save("save");
+                    if (ui.item.attr("fetchable") === "true")
+                        RetrieveSelection(ui.item.text());
+                }
+            });
+        });
+
+        $(function () {
+            $("#menu1").menu({
+                select: function (event, ui) {
+                    if (ui.item.attr("fetchable") === "true")
+                        RetrieveSelection(ui.item.text());
+                }
+            });
+        });
+
+        function RetrieveSelection( name ) {
+            var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>" +
+                "<entity name='cog_quickwrite'>" +
+                "<attribute name='cog_quickwriteid' />" +
+                "<attribute name='cog_text' />" +
+                "<filter type='and'>" +
+                "<condition attribute='cog_entityname' operator='eq' value='cog_note - paper application' />" +
+                "<condition attribute='cog_name' operator='eq' value='" + name + "' />" +
+                "</filter>" +
+                "</entity>" +
+                "</fetch>";
+
+            var records = XrmServiceToolkit.Soap.Fetch( fetchXml );
+
+            if ( records.length < 1 ) {
+                alert( name + " does not exist in Quick Write records. Please contact Administrator" );
+                return;
+            }
+
+            var currentDescription = Xrm.Page.getAttribute( "cog_note" ).getValue( );
+
+            if ( currentDescription !== null )
+                Xrm.Page.getAttribute( "cog_note" ).setValue( currentDescription + "\r\n" + "\r\n" + records[ 0 ].attributes.cog_text.value );
+            else
+                Xrm.Page.getAttribute( "cog_note" ).setValue( records[ 0 ].attributes.cog_text.value );
+        }
+    </script>
+
+    <style>
+        .ui-menu {
+            font-size: 10px;
+            width: 150px;
+        }
+        .ui-menu1 {
+            font-size: 10px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="menu" style="float: left;">
+        <li fetchable="true">Keying Error</li>
+        <li fetchable="false">
+            Change Applications PART 1
+            <ul>
+                <li fetchable="true">Clean Application</li>
+                <li fetchable="true">Clean Application - Addl Information</li>
+                <li fetchable="true">SSN Change Rejected</li>
+                <li fetchable="true">SSN Change - Accepted</li>
+                <li fetchable="true">Deactivated Records</li>
+                <li fetchable="true">Wrong Entity Type Selected</li>
+                <li fetchable="true">No Changes</li>
+                <li fetchable="true">Illegible Handwriting</li>
+                <li fetchable="true">Illegible Handwriting - Verified Via Internet</li>
+                <li fetchable="true">Information Does Not Fit Into Corresponding Field.</li>
+                <li fetchable="true">Information Does Not Fit Into Corresponding Field. - License</li>
+                <li fetchable="true">Invalid Information Provided</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Change Applications PART 2
+            <ul>
+                <li fetchable="true">Disregarded Information</li>
+                <li fetchable="true">Multiple Mailing Addresses Provided</li>
+                <li fetchable="true">Multiple Practice Addresses Provided</li>
+                <li fetchable="true">Multiple Phone Numbers Provided</li>
+                <li fetchable="true">Multiple Fax Numbers Provided</li>
+                <li fetchable="true">More Than 50 Identifiers</li>
+                <li fetchable="true">More Than 15 Taxonomies</li>
+                <li fetchable="true">NPI/SSN/EIN/ITIN in Other Identifiers Section - Not Input</li>
+                <li fetchable="true">NPI/SSN/EIN/ITIN in Other Identifiers Section - Removed</li>
+                <li fetchable="true">NPI/SSN/EIN/ITIN in License Section - Not Input</li>
+                <li fetchable="true">NPI/SSN/EIN/ITIN in License Section - Removed</li>
+                <li fetchable="true">Accepted Standardized Address</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Initial Application PART 1
+            <ul>
+                <li fetchable="true">Extra Information</li>
+                <li fetchable="true">Illegible Handwriting</li>
+                <li fetchable="true">Information Does Not Fit Into Corresponding Field.</li>
+                <li fetchable="true">Information Does Not Fit Into Corresponding Field. - License</li>
+                <li fetchable="true">Multiple Addresses/Phone/Fax/Email Provided</li>
+                <li fetchable="true">PO Box in Practice Address Field</li>
+                <li fetchable="true">SSN/EIN/ITIN in Other Identifiers Section</li>
+                <li fetchable="true">NPI/SSN/EIN/ITIN in License Section</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Initial Application PART 1
+            <ul>
+                <li fetchable="true">More Than 50 Identifiers</li>
+                <li fetchable="true">More Than 15 Taxonomies</li>
+                <li fetchable="true">Incomplete Email - Input Email</li>
+                <li fetchable="true">Incomplete Email - Did not input email</li>
+                <li fetchable="true">Contact Phone Number field blank - Practice Phone Provided</li>
+                <li fetchable="true">Contact Phone Number field blank - No Practice Phone</li>
+                <li fetchable="true">Accepted Standardized Address</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Deactivation Applications
+            <ul>
+                <li fetchable="true">Deactivation - Organization per Authorized Official</li>
+                <li fetchable="true">Deactivation - Organization per Non-Authorized Official</li>
+                <li fetchable="true">Deactivation - Organization Signature Illegible</li>
+                <li fetchable="true">Deactivation - Individual</li>
+                <li fetchable="true">NPI Deactivated</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Reactivation Applications
+            <ul>
+                <li fetchable="true">Reactivation - Organization per Authorized Official</li>
+                <li fetchable="true">Reactivation - Organization per Non-Authorized Official</li>
+                <li fetchable="true">Reactivation - Organization Signature Illegible</li>
+                <li fetchable="true">Reactivation - Individual</li>
+                <li fetchable="true">NPI Already Active - No Changes Listed</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul id="menu1" style="display:inline-block;">
+        <li fetchable="false">
+            Deceased Provider
+            <ul>
+                <li fetchable="true">Paper Deactivation received, NPI already deactivated.</li>
+                <li fetchable="true">The Deceased Provider letter has been returned as undeliverable and stamped/noted as ‘Deceased’.</li>
+                <li fetchable="true">Paper Deactivations</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Undeliverable Mail
+            <ul>
+                <li fetchable="true">Notate & Destroy</li>
+                <li fetchable="true">Returned Multiple Times</li>
+                <li fetchable="true">Sole Proprietor/Subpart/Primary Taxonomy not selected – no Outbound Call made</li>
+                <li fetchable="true">Outbound Call – Contact Successful – Letter Destroyed per Request</li>
+                <li fetchable="true">Forwarding USPS Address</li>
+                <li fetchable="true">Keying Errors Exist</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            CMS NPI 30 Day Deactivations
+            <ul>
+                <li fetchable="true">Received Response/Attestation from Organization - Sent to CMS</li>
+                <li fetchable="true">Received Response/Attestation from Organization - Dispositioned</li>
+                <li fetchable="true">Change Application Received - Sent to CMS</li>
+                <li fetchable="true">Change Application Received -Dispositioned</li>
+                <li fetchable="true">Reactivation Application Received -Sent to CMS</li>
+                <li fetchable="true">Reactivation Application Received -Dispositioned</li>
+                <li fetchable="true">Deactivation Application Received</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Invalid EIN
+            <ul>
+                <li fetchable="true">Approved IRS Form Provided</li>
+                <li fetchable="true">Deactivation - per Organization Request-Per Authorized Official</li>
+                <li fetchable="true">Deactivation - per Organization Request-Per Non-Authorized Official</li>
+                <li fetchable="true">Deactivation -  per Organization Request-Signature Illegible</li>
+                <li fetchable="true">Reactivation - IRS Form Provided-Per Authorized Official</li>
+                <li fetchable="true">Reactivation - IRS Form Provided-Per Non-Authorized Official</li>
+                <li fetchable="true">Reactivation - IRS Form Provided-Signature Illegible</li>
+                <li fetchable="true">Reactivation - IRS Form Provided-Per Contact</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            Foreign Provider Reverification
+            <ul>
+                <li fetchable="true">Reactivation application</li>
+                <li fetchable="true">Reactivation application with an SSN or US ID</li>
+                <li fetchable="true">Deactivation - NO response to Letter</li>
+                <li fetchable="true">Deactivation - NPI not needed, deactivation appolication not received within 30 days.</li>
+                <li fetchable="true">Deactivation - Provider no longer with organization and all numbers lead back to organization.</li>
+            </ul>
+        </li>
+        <li fetchable="false">
+            License Validation
+            <ul>
+                <li fetchable="true">Fee or User ID/Password are required to access the state License Validation website</li>
+                <li fetchable="true">License Validation Website is currently unavailable</li>
+                <li fetchable="true">The license information provided does not match the validation website exactly.</li>
+                <li fetchable="true">The license is validated.</li>
+                <li fetchable="true">Copy of license is provided</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
